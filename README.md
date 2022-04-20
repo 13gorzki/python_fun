@@ -1,2 +1,4 @@
 # python_fun
-python scripts for learn and fun
+**python scripts for learn and fun**
+
+`import_export_csv.py` - script import files format csv and export struture file
