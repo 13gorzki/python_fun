@@ -2,7 +2,7 @@
 2022-04-13 ggorzki:
     Skrypt łączy ze sobą pliki csv i wypluwa obrobione dane do csv
         - pliki tylko ze wskazanego folderu
-        - tylko wybrane kolumny (pliku częściowo ustrukturyzowane)
+        - tylko wybrane kolumny (pliki częściowo ustrukturyzowane)
         - do nowego pliku
 '''
 from datetime import date, timedelta
@@ -43,23 +43,21 @@ def reorganization_file(file_from_directory):
     return df_to_csv
 
 
-directory = 'C:/Users/user/Desktop/file_to_import/'     #   kopie do importu DA/22Q1 csv przecinek/'
+directory = '/Desktop/file_to_import/'    
 new_file = 'dane_import.csv'
 header = ['NazwaPliku', 'Wartosc', 'Ilosc', 'NrNadawcy',
               'NazwaProd', 'KodProd', 'Sezon', 'DataDost', 'NrZam',
               'NrOdbiorcy', 'Detal', 'Rozmiar', 'Hurt', 'EAN', 'Kupiec',
               'Marka', 'Rabat', 'Opis_zamowienia', 'Grupa', 'Przeznaczenie', 'Plec',
-              'CenaZakJedn', 'VATzak', 'VATspr', 'TermPlat']
+              'CenaZakJedn', 'VATzak', 'VATspr', 'TermPay']
 
 
 files = listing_directory(directory, 3)
 
 if files:
-    df = reorganization_file(files)
-
     if exists(new_file):
         os.remove(new_file)
-
+    df = reorganization_file(files)
     df.to_csv(new_file, sep=';', columns=header, index=False, mode='a', encoding='utf-8')    # export danych do csv
     print('Success, everything was successfully imported and exported.')
 else:
