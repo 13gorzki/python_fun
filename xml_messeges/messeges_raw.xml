@@ -1,0 +1,46 @@
+<ApiResponse xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Data>
+		<Messages>
+			<Message>
+				<Subject>SUBJECT SUBJECT 123</Subject>
+				<Id>1</Id>
+				<Type>Newsletter</Type>
+				<Tags>en</Tags>
+				<FromName>ShopName</FromName>
+				<FromEmail>email@email.com</FromEmail>
+			</Message>
+			<Message>
+				<Subject>SUBJECT SUBJECT 124</Subject>
+				<Id>2</Id>
+				<Type>Newsletter</Type>
+				<Tags>en, pl</Tags>
+				<FromName>ShopName</FromName>
+				<FromEmail>email@email.com</FromEmail>
+			</Message>
+			<Message>
+				<Subject>SUBJECT SUBJECT 125</Subject>
+				<Id>3</Id>
+				<Type>Newsletter</Type>
+				<Tags>en, pl, de</Tags>
+				<FromName>ShopName</FromName>
+				<FromEmail>email@email.com</FromEmail>
+			</Message>
+			<Message>
+				<Subject>SUBJECT SUBJECT 126</Subject>
+				<Id>4</Id>
+				<Type>Newsletter</Type>
+				<Tags>pl</Tags>
+				<FromName>ShopName2</FromName>
+				<FromEmail>email@email.com</FromEmail>
+			</Message>
+			<Message>
+				<Subject>SUBJECT SUBJECT 127</Subject>
+				<Id>5</Id>
+				<Type>Newsletter</Type>
+				<Tags>pl</Tags>
+				<FromName>ShopName</FromName>
+				<FromEmail>email3@email.com</FromEmail>
+			</Message>
+		</Messages>
+	</Data>
+</ApiResponse>
